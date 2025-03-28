@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <HorizontalStackLayout
+        Padding="30,0"
+        Margin ="0,60,0,0"
+        Spacing="25"
+        HorizontalOptions="Center"
+        VerticalOptions="Start">
+
+            <Button
+            x:Name="CounterBtn"
+            Text="Dâte d'ajout" 
+            SemanticProperties.Hint="Recherche selon la dâte d'ajout"
+            HorizontalOptions="Start"
+            Background="#194FC2"
+            FontFamily="Jersey20"
+            CornerRadius="6"
+            FontSize="30"/>
+
+            <Frame BorderColor="#194FC2" Padding="2" HasShadow="False" CornerRadius="6" BackgroundColor="#194FC2">
+                <Frame BorderColor="#194FC2" Padding="0" HasShadow="False" CornerRadius="6" >
+                <Entry 
+                FontFamily="Jersey20"
+                FontSize="30"
+                Placeholder="Recherchez..." <!-- AMELIORE LE ENTRY -->
+                TextColor="Black" 
+                HorizontalOptions="Center"
+                    />
+            </Frame>
+            </Frame>
+        </HorizontalStackLayout>
+    </ScrollView>
+
+</ContentPage>
