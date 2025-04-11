@@ -11,4 +11,9 @@ public partial class Lire : ContentPage
     {
         await Navigation.PushAsync(new About());
     }
+
+    private async void OnPageButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Lire());
+    }
 }

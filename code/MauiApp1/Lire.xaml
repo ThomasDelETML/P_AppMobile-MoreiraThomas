@@ -7,13 +7,8 @@
     </Shell.BackButtonBehavior>
 
     <ScrollView>
-
-        <HorizontalStackLayout
-            Padding="30,0,0,0"
-            Margin="0,60,0,0"
-            HorizontalOptions="Fill"
-            VerticalOptions="Start">
-
+        <VerticalStackLayout Padding="30,60,30,0" Spacing="20">
+            <HorizontalStackLayout>
                 <Button
                 x:Name="Livre"
                 Text="Livre"
@@ -26,6 +21,29 @@
                 HeightRequest="50"
                 CornerRadius="3"
                 FontSize="32" />
+
+                <Button
+                x:Name="Page"
+                Text="Page X"
+                Clicked="OnPageButtonClicked"
+                SemanticProperties.Hint="Va sur la page d'après"
+                HorizontalOptions="End"
+                Background="#194FC2"
+                FontFamily="Jersey20"
+                WidthRequest="120"
+                HeightRequest="50"
+                CornerRadius="3"
+                FontSize="32"
+                Margin="110,0,0,0"/>
             </HorizontalStackLayout>
+
+            <Label FontFamily="Jersey20"
+            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="32"
+            LineBreakMode="WordWrap" />
+        </VerticalStackLayout>
     </ScrollView>
+
 </ContentPage>
