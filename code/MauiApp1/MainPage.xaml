@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
 
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+
     <ScrollView>
         <VerticalStackLayout>
             <HorizontalStackLayout
@@ -13,7 +17,7 @@
         VerticalOptions="Start">
 
                 <Button
-            x:Name="CounterBtn"
+            x:Name="Date"
             Text="Dâte d'ajout" 
             SemanticProperties.Hint="Recherche selon la dâte d'ajout"
             HorizontalOptions="Start"
@@ -48,10 +52,15 @@
                 <!-- Première ligne -->
                 <StackLayout Orientation="Horizontal" Spacing="30">
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnWizardStackTapped" />
+                        </StackLayout.GestureRecognizers>
+
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
                         <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
                         <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
                     </StackLayout>
+
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
                         <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
