@@ -8,13 +8,15 @@
     </Shell.BackButtonBehavior>
 
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="White">
+            
             <HorizontalStackLayout
         Padding="30,0"
         Margin ="0,60,0,0"
         Spacing="25"
         HorizontalOptions="Center"
-        VerticalOptions="Start">
+        VerticalOptions="Start"
+        >
 
                 <Button
             x:Name="Date"
@@ -26,21 +28,22 @@
             WidthRequest="120"
             HeightRequest="50"
             CornerRadius="3"
-            FontSize="20"/>
+            FontSize="20"
+            TextColor="White"/>
 
                 <Frame BorderColor="#194FC2" Padding="3" HasShadow="False" CornerRadius="3" BackgroundColor="#194FC2" HeightRequest="50">
                     <Frame BorderColor="#194FC2" Padding="0" HasShadow="False" CornerRadius="1" >
                         <Entry 
-                Visual="Default"
-                FontFamily="Jersey20"
-                FontSize="20"
-                Placeholder="Recherchez..."
-                TextColor="Black" 
-                HorizontalOptions="Center"
-                WidthRequest="200"
-                HeightRequest="50"   
-                
-                    />
+                            Visual="Default"
+                            FontFamily="Jersey20"
+                            FontSize="20"
+                            Placeholder="Recherchez..."
+                            TextColor="Black" 
+                            BackgroundColor="White"
+                            HorizontalOptions="Center"
+                            WidthRequest="200"
+                            HeightRequest="50"   
+                        />
                     </Frame>
                 </Frame>
             </HorizontalStackLayout>
@@ -57,14 +60,14 @@
                         </StackLayout.GestureRecognizers>
 
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
-                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
-                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
+                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
-                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
-                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
+                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
                     </StackLayout>
                 </StackLayout>
 
@@ -72,13 +75,13 @@
                 <StackLayout Orientation="Horizontal" Spacing="30">
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
-                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
-                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
+                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
                     </StackLayout>
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
-                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
-                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
+                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
                     </StackLayout>
                 </StackLayout>
 
@@ -86,13 +89,13 @@
                 <StackLayout Orientation="Horizontal" Spacing="30">
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
-                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
-                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
+                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
                     </StackLayout>
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
-                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
-                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center"/>
+                        <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
