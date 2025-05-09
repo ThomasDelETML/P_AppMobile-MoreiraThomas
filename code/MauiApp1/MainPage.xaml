@@ -9,7 +9,7 @@
 
     <ScrollView>
         <VerticalStackLayout BackgroundColor="White">
-            
+
             <HorizontalStackLayout
         Padding="30,0"
         Margin ="0,60,0,0"
@@ -47,10 +47,6 @@
                     </Frame>
                 </Frame>
             </HorizontalStackLayout>
-
-
-
-
             <StackLayout Orientation="Vertical" Spacing="20" Margin="30" VerticalOptions="Center">
                 <!-- Première ligne -->
                 <StackLayout Orientation="Horizontal" Spacing="30">
@@ -67,7 +63,7 @@
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="-25">
                         <Image Source="wizardbook.png" WidthRequest="160" HeightRequest="320" />
                         <Label Text="Ulgrif The Great, Celtania (c)1988" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
-                        <Label Text="How to be a cool ahh Wizard" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label x:Name="TitleLabel" FontFamily="Jersey20" FontSize="13" HorizontalTextAlignment="Center" TextColor="Black"/>
                     </StackLayout>
                 </StackLayout>
 
