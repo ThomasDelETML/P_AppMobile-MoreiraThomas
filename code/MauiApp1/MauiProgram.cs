@@ -21,13 +21,6 @@ namespace MauiApp1
             builder.Logging.AddDebug();
 #endif
 
-            EntryHandler.Mapper.AppendToMapping("NoUnderline", (handler, view) =>
-            {
-#if ANDROID
-                handler.PlatformView.Background = null;
-#endif
-            });
-
             return builder.Build();
         }
     }
