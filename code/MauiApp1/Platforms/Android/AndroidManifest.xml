@@ -1,5 +1,5 @@
 ﻿<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.companyname.P_ReadME_GHE">
+          package="com.companyname.MauiApp1">
 
     <!-- ✅ Autorisations -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +11,7 @@
         android:icon="@mipmap/appicon"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:label="P_ReadME_GHE"
+        android:label="MauiApp1"
         android:theme="@style/Maui.SplashTheme">
     </application>
 

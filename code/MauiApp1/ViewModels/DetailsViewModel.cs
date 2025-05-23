@@ -1,8 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using P_ReadME_GHE.Models;
-using P_ReadME_GHE.Services;
+using MauiApp1.Models;
+using MauiApp1.Services;
 
-namespace P_ReadME_GHE.ViewModels;
+namespace MauiApp1.ViewModels;
 
 [QueryProperty(nameof(LivreId), "id")]
 public partial class DetailsViewModel : ObservableObject

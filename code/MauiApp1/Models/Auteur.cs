@@ -1,4 +1,4 @@
-﻿namespace P_ReadME_GHE.Models
+﻿namespace MauiApp1.Models
 {
     public class Auteur
     {

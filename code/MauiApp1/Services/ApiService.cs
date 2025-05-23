@@ -1,9 +1,9 @@
 ﻿using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using P_ReadME_GHE.Models;
+using MauiApp1.Models;
 
-namespace P_ReadME_GHE.Services
+namespace MauiApp1.Services
 {
     public class ApiService
     {
@@ -13,14 +13,14 @@ namespace P_ReadME_GHE.Services
             PropertyNameCaseInsensitive = true
         };
 
-        // ✅ Constructeur sans paramètre — compatible avec instanciation manuelle
+        // Constructeur sans paramètre — compatible avec instanciation manuelle
         public ApiService()
         {
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = new Uri("http://10.0.2.2:3000/");
         }
 
-        // 🔹 Récupère tous les livres
+        // Récupère tous les livres
         public async Task<List<Livre>> GetLivresAsync()
         {
             var response = await _httpClient.GetAsync("livres");
@@ -34,7 +34,7 @@ namespace P_ReadME_GHE.Services
             return apiResponse?.Data ?? new List<Livre>();
         }
 
-        // 🔹 Récupère un livre par ID
+        // Récupère un livre par ID
         public async Task<Livre?> GetLivreByIdAsync(int id)
         {
             var response = await _httpClient.GetAsync($"livres/{id}");
@@ -46,7 +46,7 @@ namespace P_ReadME_GHE.Services
             return JsonSerializer.Deserialize<Livre>(content, _jsonOptions);
         }
 
-        // 🔹 Ajoute un nouveau livre
+        // Ajoute un nouveau livre
         public async Task<bool> PostLivreAsync(Livre livre)
         {
             var json = JsonSerializer.Serialize(livre, _jsonOptions);
@@ -56,7 +56,7 @@ namespace P_ReadME_GHE.Services
             return response.IsSuccessStatusCode;
         }
 
-        // 🔹 Modifie un livre existant
+        // Modifie un livre existant
         public async Task<bool> PutLivreAsync(int id, Livre livre)
         {
             var json = JsonSerializer.Serialize(livre, _jsonOptions);
@@ -66,7 +66,7 @@ namespace P_ReadME_GHE.Services
             return response.IsSuccessStatusCode;
         }
 
-        // 🔹 Supprime un livre
+        // Supprime un livre
         public async Task<bool> DeleteLivreAsync(int id)
         {
             var response = await _httpClient.DeleteAsync($"livres/{id}");

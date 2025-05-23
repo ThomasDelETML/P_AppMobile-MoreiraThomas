@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace P_ReadME_GHE.ViewModels;
+namespace MauiApp1.ViewModels;
 
 public partial class ProfileViewModel : ObservableObject
 {

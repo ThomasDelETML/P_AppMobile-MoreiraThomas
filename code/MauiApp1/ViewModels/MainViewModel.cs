@@ -1,10 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using P_ReadME_GHE.Models;
-using P_ReadME_GHE.Services;
+using MauiApp1.Models;
+using MauiApp1.Services;
 using System.Collections.ObjectModel;
 
-namespace P_ReadME_GHE.ViewModels;
+namespace MauiApp1.ViewModels;
 
 public partial class MainViewModel : ObservableObject
 {
