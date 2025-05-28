@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadME", "ReadME.csproj", "{AE96AB24-6147-4785-951B-058E8A9C9CE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE96AB24-6147-4785-951B-058E8A9C9CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE96AB24-6147-4785-951B-058E8A9C9CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE96AB24-6147-4785-951B-058E8A9C9CE6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AE96AB24-6147-4785-951B-058E8A9C9CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE96AB24-6147-4785-951B-058E8A9C9CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE96AB24-6147-4785-951B-058E8A9C9CE6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5776DA07-EB43-4061-8CD6-859010568839}
+	EndGlobalSection
+EndGlobal

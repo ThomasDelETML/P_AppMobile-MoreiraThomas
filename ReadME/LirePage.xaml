@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:ReadME.ViewModels"
+             x:Class="ReadME.LirePage">
+    <ContentPage.BindingContext>
+        <viewmodels:LireViewModel />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout
+                Padding="30,0,0,0"
+                Margin="0,20,0,0"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start">
+                <Button
+                    Text="Retour"
+                    Command="{Binding GoBackCommand}"
+                    SemanticProperties.Hint="Retourner à la page précédente"
+                    HorizontalOptions="Start"
+                    Background="#194FC2"
+                    FontFamily="Jersey20"
+                    WidthRequest="120"
+                    HeightRequest="50"
+                    CornerRadius="3"
+                    FontSize="20"
+                    TextColor="White"
+                    />
+            </HorizontalStackLayout>
+            <StackLayout Orientation="Vertical" Spacing="20" Margin="30" VerticalOptions="Center">
+                <Label Text="{Binding Title}"
+                       FontFamily="Jersey20" 
+                       FontSize="32" 
+                       HorizontalTextAlignment="Center"
+                       Margin="0,20,0,0"/>
+                <Label Text="{Binding Auteur}" 
+                       FontFamily="Jersey20" 
+                       FontSize="24" 
+                       HorizontalTextAlignment="Center" />
+                <Frame BorderColor="#194FC2" Padding="3" HasShadow="False" CornerRadius="3" BackgroundColor="#194FC2" Margin="0,20,0,0">
+                    <Frame BorderColor="#194FC2" Padding="0" HasShadow="False" CornerRadius="1" >
+                        <ScrollView BackgroundColor="White">
+                            <Label Text="{Binding Contenu}" 
+                                   FontFamily="Jersey20"
+                                   FontSize="16"
+                                   TextColor="Black" 
+                                   BackgroundColor="White"
+                                   Padding="15"
+                                   LineBreakMode="WordWrap"/>
+                        </ScrollView>
+                    </Frame>
+                </Frame>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,9 +1,0 @@
-Voilà ce qui est fait dans mes projet et ce qui reste a faire au 16.05.2025 15h45:
-- UX Fait
-- Frontend Fait
-- Backend Connecter
-
-- Utiliser les données du backend
-
-(Note : si vous testez mon app sur un téléphone physique, veuillez mettre le mode clair)
-Thomas Moreira, Cid2B
