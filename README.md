@@ -16,7 +16,7 @@
 - Exécutez
 
 ```bash
-git clone https://github.com/GHerreraE/P_AppMobile-MoreiraThomas.git
+git clone https://github.com/ThomasDelETML/P_AppMobile-MoreiraThomas.git
 ```
 
 ## 2. Démarrer MySQL avec Docker et créer la database
